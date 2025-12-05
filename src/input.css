@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* keep your variables here (or in :root in a separate file) */
+:root {
+  /* Colors */
+  --color-purple-700: #5D3186;
+  --color-dpurple-500: #0c001c;
+  --color-background: #fbfbfb;
+  --color-white-500: #ffffff;
+
+  /* Fonts */
+  --font-serif: "Dongle", sans-serif;
+
+  /* Font Size */
+  --font-size-h1: 76px;
+  --font-size-h2: 48px;
+  --font-size-h3: 40px;
+  --font-size-h4: 32px;
+  --font-size-h5: 24px;
+  --font-size-paragraph: 18px;
+
+  /* Spacing */
+  --spacing-xl: 64px;
+  --spacing-lg: 32px;
+  --spacing-md: 16px;
+  --spacing-sm: 8px;
+  --spacing-xs: 4px;
+}
+
+/* Optional: map your variables to utility-like classes */
+@layer components {
+  .font-serif { font-family: var(--font-serif); }
+
+  .text-h1 { font-size: var(--font-size-h1); line-height: 1; }
+  .text-h2 { font-size: var(--font-size-h2); line-height: 1.08; }
+  .text-h3 { font-size: var(--font-size-h3); line-height: 1.1; }
+  .text-h4 { font-size: var(--font-size-h4); line-height: 1.15; }
+  .text-h5 { font-size: var(--font-size-h5); line-height: 1.2; }
+  .text-paragraph { font-size: var(--font-size-paragraph); line-height: 1.6; }
+
+  /* spacing helpers using your variables */
+  .p-xl { padding: var(--spacing-xl); }
+  .p-md { padding: var(--spacing-md); }
+  .mb-lg { margin-bottom: var(--spacing-lg); }
+  .mb-md { margin-bottom: var(--spacing-md); }
+  .mb-sm { margin-bottom: var(--spacing-sm); }
+
+  /* color helpers */
+  .text-dpurple-500 { color: var(--color-dpurple-500); }
+  .text-purple-700 { color: var(--color-purple-700); }
+  .bg-background { background-color: var(--color-background); }
+  .bg-white-500 { background-color: var(--color-white-500); }
+  .bg-dpurple-500 { background-color: var(--color-dpurple-500); }
+  .text-white-500 { color: var(--color-white-500); }
+
+  /* Center video content */
+.video-centered {
+  object-fit: cover;      /* Fill the container */
+  object-position: center; /* Focus on the center of the video */
+}
+
+}
