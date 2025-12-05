@@ -18,8 +18,14 @@
 .flex {
   display: flex;
 }
+.grid {
+  display: grid;
+}
 .inline-block {
   display: inline-block;
+}
+.h-\[100px\] {
+  height: 100px;
 }
 .h-\[200px\] {
   height: 200px;
@@ -27,8 +33,17 @@
 .h-\[275px\] {
   height: 275px;
 }
+.h-\[300px\] {
+  height: 300px;
+}
 .h-\[379px\] {
   height: 379px;
+}
+.h-\[400px\] {
+  height: 400px;
+}
+.h-\[600px\] {
+  height: 600px;
 }
 .h-full {
   height: 100%;
@@ -36,8 +51,8 @@
 .w-\[177px\] {
   width: 177px;
 }
-.w-\[188px\] {
-  width: 188px;
+.w-\[412px\] {
+  width: 412px;
 }
 .w-\[calc\(100\%\+16px\)\] {
   width: calc(100% + 16px);
@@ -48,8 +63,17 @@
 .max-w-\[412px\] {
   max-width: 412px;
 }
+.max-w-\[1200px\] {
+  max-width: 1200px;
+}
+.max-w-\[1790px\] {
+  max-width: 1790px;
+}
 .max-w-\[2736px\] {
   max-width: 2736px;
+}
+.max-w-full {
+  max-width: 100%;
 }
 .flex-1 {
   flex: 1;
@@ -63,11 +87,17 @@
 .list-none {
   list-style-type: none;
 }
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 .flex-col {
   flex-direction: column;
 }
 .flex-row {
   flex-direction: row;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
 }
 .flex-wrap {
   flex-wrap: wrap;
@@ -81,17 +111,14 @@
 .justify-center {
   justify-content: center;
 }
+.justify-start {
+  justify-content: flex-start;
+}
 .gap-\[32px\] {
   gap: 32px;
 }
 .overflow-hidden {
   overflow: hidden;
-}
-.rounded-\[10px\] {
-  border-radius: 10px;
-}
-.rounded-\[12px\] {
-  border-radius: 12px;
 }
 .rounded-\[16px\] {
   border-radius: 16px;
